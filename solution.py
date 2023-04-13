@@ -2,11 +2,10 @@ import pandas as pd
 import numpy as np
 from scipy.stats import ttest_1samp
 
-data = pd.read_csv('hyp3_historical_data.csv')
 
 chat_id = 252623629
 
-def solution(data: data) -> bool:
+def solution(data: np.array) -> bool:
   alpha = 0.1
   sample_mean = data.mean()
   n = len(data)
